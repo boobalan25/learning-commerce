@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    gap: 24px !important;
+    flex-wrap: wrap;
+}
+
+.flex-container>* {
+    gap: 24px;
+    flex-direction: column;
+    height: 100% !important;
+}
+
+@media only screen and (min-width: 48em) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px !important;
+    }
+
+    .flex-container>* {
+        flex: 1 1;
+        gap: 24px;
+        height: 100% !important;
+    }
+}
